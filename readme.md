@@ -5,12 +5,15 @@
 - ninja for build engine
 - cmake with cmakepresets for build generator
 - C++ modules enabled
-- Raylib 5.0
+
+## Dependencies
+- Raylib 5.0 
 - raylib-cpp wrapper for c++
 
 ## to be figured out
 - linux configuration
 
 ## Sub-project
-- Basic Setup
+- Initial Setup
+  - simple clean project, creates window using Raylib 5, via Raylib_Cpp.
 - 
