@@ -21,7 +21,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(raylib_cpp)
 
 message("\n"
-	"The package raylib-cpp ${RAYLIB_CPP_VERSION} provides CMake targets: \n\n"
+	"The package raylib_cpp ${RAYLIB_CPP_VERSION} provides CMake targets: \n\n"
 	"	find_package(raylib_cpp)\n"
 	"	target_link_libraries(main PRIVATE raylib_cpp)\n"
 )
