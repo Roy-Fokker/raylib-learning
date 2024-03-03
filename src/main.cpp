@@ -3,9 +3,9 @@
 // Supress some warnings in raylib-cpp and how it wraps raylib
 // there is probably a better way to do this
 #pragma warning(push)
-#pragma warning(disable : 4018)
-#pragma warning(disable : 4458)
-#pragma warning(disable : 4505)
+#pragma warning(disable : 4018) // '>=': signed/unsigned mismatch
+#pragma warning(disable : 4458) // declaration of {class_method} hides {parent_class} class member
+#pragma warning(disable : 4505) // unreferenced function with internal linkage has been removed
 #include <raylib-cpp.hpp>
 #pragma warning(pop)
 
@@ -17,8 +17,8 @@ auto main() -> int
 	constexpr auto screenHeight = 450;
 	constexpr auto targetFPS    = 60;
 
-	raylib::Color textColor = raylib::Color::LightGray();
-	raylib::Window window(screenWidth, screenHeight, "raylib [core] example - basic window");
+	auto textColor = raylib::Color::LightGray();
+	auto window    = raylib::Window(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 	SetTargetFPS(targetFPS);
 	//--------------------------------------------------------------------------------------
