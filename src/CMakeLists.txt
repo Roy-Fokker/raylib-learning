@@ -36,6 +36,7 @@ target_sources(${PRJ_APP_NAME}
 # libraries used by this application
 target_link_libraries(${PRJ_APP_NAME}
 	PRIVATE
-		raylib
-		raylib_cpp
+		std23             # precompiled header for C++ 23 Standard Libary
+		raylib            # Raylib 5.0 library
+		raylib_cpp        # Raylib C++ wrapper library
 )

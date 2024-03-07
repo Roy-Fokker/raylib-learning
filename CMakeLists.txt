@@ -15,5 +15,8 @@ set(CMAKE_CXX_STANDARD 23)
 # standard is required
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# precompile library for STD headers
+add_subdirectory(std23)
+
 # executable source folder
 add_subdirectory(src)
