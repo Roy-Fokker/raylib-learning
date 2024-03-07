@@ -13,6 +13,12 @@ add_executable(${PRJ_APP_NAME})
 # ensure it's Standard C++ 23
 target_compile_features(${PRJ_APP_NAME} PRIVATE cxx_std_23)
 
+# precompile library headers
+target_precompile_headers(${PRJ_APP_NAME}
+	PRIVATE
+		pch.hpp
+)
+
 # set preprocessor defines
 target_compile_definitions(${PRJ_APP_NAME}
 	PRIVATE 
