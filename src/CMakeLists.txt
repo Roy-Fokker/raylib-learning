@@ -1,6 +1,8 @@
 # find vcpkg installed library
 find_package(raylib CONFIG REQUIRED)
-find_package(raylib_cpp)
+# find packages using our cmake modules
+find_package(raylib_cpp REQUIRED)
+
 
 # name of this application/library
 set(PRJ_APP_NAME "rl5-lrn")
